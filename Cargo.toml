@@ -4,3 +4,16 @@ version = "0.1.0"
 authors = ["David Craven <david@craven.ch>"]
 
 [dependencies]
+hifive = { path = "riscv-crates/hifive" }
+stlog = "^0.2.0"
+
+[profile.release]
+debug = true
+lto = true
+
+[profile.dev]
+debug = true
+lto = true
+# workaround rust-lang/rust#47074
+codegen-units = 1
+incremental = false
