@@ -1,0 +1,3 @@
+[submodule "riscv-crates"]
+	path = riscv-crates
+	url = https://github.com/riscv-rust/riscv-crates
